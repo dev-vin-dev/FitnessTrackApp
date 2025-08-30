@@ -9,8 +9,11 @@ import Footer from './components/Footer'
 import Dashboard from './pages/Dashboard'
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import DashboardOverview from './pages/DashboardOverview';
+import DashboardOverview from './pages/DashboardOverview'
 import LogWorkout from './pages/Logworkouts'
+import Exercises from './pages/Exercises';
+import ExerciseDetails from './pages/exerciseDetails'
+
 
 
 function App() {
@@ -35,6 +38,8 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/dashboard" element={<DashboardOverview />} />
         <Route path="/dashboard/log" element={<LogWorkout />} />
+        <Route path="dashboard/exercises" element={<Exercises />} />
+        <Route path="/exercises/:id" element={<ExerciseDetails />} />
       </Routes>
 
       <Footer />
