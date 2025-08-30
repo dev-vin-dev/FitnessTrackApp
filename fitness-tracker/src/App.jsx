@@ -9,6 +9,8 @@ import Footer from './components/Footer'
 import Dashboard from './pages/Dashboard'
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import DashboardOverview from './pages/DashboardOverview';
+import LogWorkout from './pages/Logworkouts'
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
 
         {/* Dashboard Page */}
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard" element={<DashboardOverview />} />
+        <Route path="/dashboard/log" element={<LogWorkout />} />
       </Routes>
 
       <Footer />
